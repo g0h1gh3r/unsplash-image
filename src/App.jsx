@@ -1,4 +1,15 @@
+import Gallery from './components/Gallery'
+import SearchForm from './components/SearchForm'
+import ThemeToggle from './components/ThemeToggle'
+import { useGlobalContext } from './context'
+
 const App = () => {
-  return <h1>Unsplash Images Starter</h1>;
-};
-export default App;
+  return (
+    <main className="container">
+      <ThemeToggle></ThemeToggle>
+      <SearchForm></SearchForm>
+      <Gallery></Gallery>
+    </main>
+  )
+}
+export default App
